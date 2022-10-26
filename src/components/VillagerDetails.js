@@ -1,4 +1,4 @@
-function Villager ({ villager }) {
+function VillagerDetails ({ villager }) {
 
     
     console.log(villager.name["name-USen"])
@@ -13,4 +13,4 @@ function Villager ({ villager }) {
      );
 }
 
-export default Villager;
+export default VillagerDetails;

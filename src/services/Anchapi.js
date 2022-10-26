@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import Villager from '../components/Villager';
+import Villager from '../components/VillagerDetails';
+import Day from '../pages/Day';
 
 
 function Anchapi() {

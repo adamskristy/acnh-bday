@@ -36,7 +36,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home villagers={villagers} />} />
-        <Route path='/calendar/:month' element={<Calendar months={months} />} />
+        <Route path='/calendar/:month' element={<Calendar months={months} villagers={villagers} />} />
         <Route path='/calendar/:month/:day' element={<Day villagers={villagers} />} />
         <Route path='/calendar/:month/:day/villager/:id' element={<VillagerDetails villagers={villagers} />} />
         <Route path='/notfound' element={<NotFound404 />} />

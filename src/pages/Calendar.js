@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import Back from "../components/Back";
 
 
 function Calendar({ months }) {
@@ -26,15 +27,15 @@ function Calendar({ months }) {
                 {selectedMonth?.days?.map((days, index) => {
                     return(
                         <Link key={index} to={`/calendar/${month}/${days}`}>
-                            <li  className="calendar-day" >
+                            <li className="calendar-day" >
                                 <span>{days}</span>
                             </li>  
                         </Link>                      
                     )
                 })}
             </ul>
-           
-        </div>
+            <Back />   
+        </div> 
      );
 }
             

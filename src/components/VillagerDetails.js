@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import Back from "./Back";
 
 
 function VillagerDetails ({ villagers }) {
@@ -25,7 +26,7 @@ function VillagerDetails ({ villagers }) {
             <h3>Species: {villager.species}</h3>
             <h3>Personality: {villager.personality}</h3>
             <h3>Saying: {villager.saying} </h3>
-            
+          <Back />
         </div>
         )
      );

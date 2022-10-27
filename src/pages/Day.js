@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import Back from "../components/Back";
 
 
 function Day ({ villagers }) {
@@ -52,7 +53,7 @@ function Day ({ villagers }) {
                     )
                 })}
             </ul>
-
+            <Back />
         </div>
      );
 }

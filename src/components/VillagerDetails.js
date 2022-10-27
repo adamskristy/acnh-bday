@@ -1,14 +1,25 @@
-function VillagerDetails ({ villager }) {
+import { useParams } from "react-router-dom";
 
+
+function VillagerDetails ({ villagers }) {
+    const { id } = useParams()
+    //console.log(id)
     
-    console.log(villager.name["name-USen"])
+    const findAnimalById = villagers.find((v) => {
+        if(id == v.id){
+            return true
+        } else {
+            return false
+        }
+    })
+
+    //console.log(findAnimalById)
+
+    const villager = findAnimalById
     
     return ( 
         <div className="villager">
-            <h2>Name: {villager.name["name-USen"]}</h2>
-            <h2>Species: {villager.species}</h2>
-            {/* <h2>bday: {villager.birthday}</h2> */}
-            <h2>Birthday: {villager["birthday-string"]}</h2>
+            <h3>{villager.personality}</h3>
         </div>
      );
 }

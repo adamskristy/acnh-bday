@@ -20,3 +20,11 @@ li {
     justify-content: center;
     align-items: center;
 }
+
+.calendar {
+    outline: 1px solid palevioletred
+}
+
+.calendar-day {
+    outline: 1px solid lightgreen
+}

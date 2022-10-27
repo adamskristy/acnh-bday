@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 
 
 function Calendar({ months }) {
-    const { month, days } = useParams()
+    const { month } = useParams()
         //console.log(months)
 
 //using find method
@@ -22,7 +22,7 @@ function Calendar({ months }) {
         <div className="calendar">
             <h3>{month} Calendar</h3>
             <ul>
-                {/* using selected month object */}
+                {/* using selected month object, map over days array */}
                 {selectedMonth?.days?.map((days, index) => {
                     return(
                         <Link to={`/calendar/${month}/${days}`}>

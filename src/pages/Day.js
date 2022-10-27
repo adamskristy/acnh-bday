@@ -1,13 +1,15 @@
 import { useParams, Link } from "react-router-dom";
-import VillagerDetails from "../components/VillagerDetails";
+
 
 function Day ({ villagers }) {
    
-    const { month, day, id } = useParams()
+    const { month, day } = useParams()
     //console.log(villagers)
 
     const findAnimals = villagers.find((v) => {
         const bdayString = v["birthday-string"]
+        //console.log(bdayString)
+            //birthday-string "January 1st"
 
         const birthday = v.birthday
         //console.log(birthday)
@@ -40,11 +42,13 @@ function Day ({ villagers }) {
             <ul>
                 {animalsArr?.map((animal) => {
                     return(
-                        <Link to={`/calendar/${month}/${day}/villager/${animal.id}`}>
-                            <li key={animal.id}>
+                        animal && (
+                        <Link key={animal.id} to={`/calendar/${month}/${day}/villager/${animal.id}`}>
+                            <li >
+                                {/* {console.log(animal.id)} */}
                                 <span>{animal.name['name-USen']}</span>
                             </li>
-                        </Link>
+                        </Link> )
                     )
                 })}
             </ul>

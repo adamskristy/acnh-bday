@@ -18,9 +18,16 @@ function VillagerDetails ({ villagers }) {
     const villager = findAnimalById
     
     return ( 
+        villager && (
         <div className="villager">
-            <h3>{villager.personality}</h3>
+            <h2>Name: {villager.name['name-USen']}</h2>
+            <h3>Birthday: {villager["birthday-string"]}</h3> 
+            <h3>Species: {villager.species}</h3>
+            <h3>Personality: {villager.personality}</h3>
+            <h3>Saying: {villager.saying} </h3>
+            
         </div>
+        )
      );
 }
 

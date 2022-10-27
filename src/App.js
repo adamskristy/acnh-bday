@@ -9,6 +9,7 @@ import Day from "./pages/Day";
 import Home from './pages/Home';
 import VillagerDetails from "./components/VillagerDetails";
 import  months  from "./components/months";
+import NotFound404 from "./pages/NotFound404";
 
 
 
@@ -28,14 +29,17 @@ function App() {
   useEffect(() => {
       getAllVillagers()
   },[])
+
+
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home villagers={villagers} />} />
         <Route path='/calendar/:month' element={<Calendar months={months} />} />
         <Route path='/calendar/:month/:day' element={<Day villagers={villagers} />} />
         <Route path='/calendar/:month/:day/villager/:id' element={<VillagerDetails villagers={villagers} />} />
+        <Route path='/notfound' element={<NotFound404 />} />
       </Routes>
     </div>
   );

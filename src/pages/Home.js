@@ -2,7 +2,7 @@ import  months  from "../components/months";
 import { Link } from "react-router-dom";
 import Form from "../components/Form";
 
-function Home() {
+function Home({ villagers }) {
     return ( 
         <div className="home-container">
             
@@ -14,7 +14,7 @@ function Home() {
                     )
                 })}
             
-            <Form />
+            <Form villagers={villagers} />
         </div>
         
      );

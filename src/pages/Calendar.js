@@ -25,8 +25,8 @@ function Calendar({ months }) {
                 {/* using selected month object, map over days array */}
                 {selectedMonth?.days?.map((days, index) => {
                     return(
-                        <Link to={`/calendar/${month}/${days}`}>
-                            <li className="calendar-day" key={index}>
+                        <Link key={index} to={`/calendar/${month}/${days}`}>
+                            <li  className="calendar-day" >
                                 <span>{days}</span>
                             </li>  
                         </Link>                      

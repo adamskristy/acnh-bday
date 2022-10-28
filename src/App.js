@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 
 import './App.css';
+import './index.css';
 import Header from './components/Header';
 import Calendar from "./pages/Calendar";
 import Day from "./pages/Day";
@@ -32,7 +33,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div>
       <Header />
       <Routes>
         <Route path='/' element={<Home villagers={villagers} />} />

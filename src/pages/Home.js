@@ -4,12 +4,12 @@ import Form from "../components/Form";
 
 function Home({ villagers }) {
     return ( 
-        <div className="home-container">
+        <div>
             
                 {months.map((month) => {
                     return(
                         <Link key={month.id} to={`/calendar/${month.month}`}>
-                            <h3 className="home-month">{month.month}</h3>
+                            <h3>{month.month}</h3>
                         </Link>
                     )
                 })}

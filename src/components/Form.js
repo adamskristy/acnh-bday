@@ -1,5 +1,5 @@
 import { useState} from 'react';
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 
 function Form ({ villagers }) {
@@ -27,6 +27,7 @@ function Form ({ villagers }) {
             if (formData === v.birthday){
                 return true
             } else {
+                return false &&
                 navigate('/notfound')
             }             
         })
@@ -52,7 +53,7 @@ function Form ({ villagers }) {
     } 
 
     return ( 
-        <div className='form-form'>
+        <div>
             <form onSubmit={handleSubmit}>
                 <label name='search'>Search for your birthday match </label>
                 <br />

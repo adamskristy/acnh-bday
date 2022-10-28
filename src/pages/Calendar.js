@@ -20,7 +20,7 @@ function Calendar({ months }) {
     //console.log(selectedMonth)
 
     return ( 
-        <div className="calendar">
+        <div>
             <h3>{month} Calendar</h3>
             <ul>
                 {/* using selected month object, map over days array */}

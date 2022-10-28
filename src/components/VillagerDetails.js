@@ -20,7 +20,7 @@ function VillagerDetails ({ villagers }) {
     
     return ( 
         villager && (
-        <div className="villager">
+        <div>
             <h2>Name: {villager.name['name-USen']}</h2>
             <h3>Birthday: {villager["birthday-string"]}</h3> 
             <h3>Species: {villager.species}</h3>

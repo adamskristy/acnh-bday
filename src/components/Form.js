@@ -27,7 +27,6 @@ function Form ({ villagers }) {
             if (formData === v.birthday){
                 return true
             } else {
-                return false &&
                 navigate('/notfound')
             }             
         })
@@ -53,11 +52,11 @@ function Form ({ villagers }) {
     } 
 
     return ( 
-        <div>
+        <div className='box control has-icons-left'>
             <form onSubmit={handleSubmit}>
-                <label name='search'>Search for your birthday match </label>
-                <br />
+                <label className='label' name='search'>Search for your birthday match </label>
                 <input 
+                className='input'
                     name='search'
                     type='text' 
                     placeholder="Day/Month"
@@ -66,7 +65,11 @@ function Form ({ villagers }) {
                     //updates state when user types
                     onChange={handleChange} 
                 />
-                <input type='submit' value='submit' name='search' />
+                <span className="icon is-small is-left">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input className='button' type='submit' value='submit' name='search' />
+                
             </form>
         </div>
      );

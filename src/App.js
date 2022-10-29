@@ -33,7 +33,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="container">
       <Header />
       <Routes>
         <Route path='/' element={<Home villagers={villagers} />} />

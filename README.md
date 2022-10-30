@@ -1,70 +1,81 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ACNH Birthday Directory
 
-## Available Scripts
+This mid-mod is frontend focused and for practicing React skills.
 
-In the project directory, you can run:
+### Minimum Project Requirements
+- There should be at least 4-5 functional components
+- There should be at least 3 or more pages (separate routes)
+- The Application must make use of React Router (`npm install react-router-dom`)
+- Uses at least one external API 
+- Prop passing of some sort
+- Has README.md file at the root of repository that clearly documents the purpose of the project, the target end user, and includes a link to the deployed version of the project
+- Must have a repository and make regular commits (at least 10 total)
+- Must be deployed (a good option is Netlify.)
 
-### `npm start`
+### Stretch Goals:
+- Manage at least some part of state with the useReducer and useContext hooks (together) or Redux. (`npm install @reduxjs/toolkit react-redux`) 
+- Use Local Storage to store some of your application data in the browser
+- Install axios (`npm install axios`) and use it to read external APIs
+- Use a CSS Framework (like Bootstrap) to style part of your application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://acnh-bday.netlify.app
 
-### `npm test`
+## Motivations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I choose this project idea due to love of video games, like Animal Crossing, and wanting to pick a fun topic. Also the ease of access to the information. I wanted to pick an API that was relatively simple to understand.
 
-### `npm run build`
+This project is for the Animal Crossing Lovers like myself.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
+I used Miro to help whiteboard an idea for the layout.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![App Screenshot](https://i.imgur.com/ED5iqWhl.png)
+![App Screenshot](https://i.imgur.com/jcbdDeNl.png)
+![App Screenshot](https://i.imgur.com/fJnc8hDl.png)
+![App Screenshot](https://i.imgur.com/zKsOITxl.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Client:** React, Bulma, SCSS, SASS, Font Awesome
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Server:** Node
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Lessons Learned
 
-## Learn More
+I learned that I need a lot more practice with the fundamentals of JavaScript. This project required the use of a lot of array methods like map, find, and filter. I also used a lot of string methods such as includes and split.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project really challenged the way I think about problem solving and helped me to sharpen my debugging skills.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Some challenges I faced was the simplistic nature of the API. There were no built in functions to search or filter the information so I had to come up with that myself. Thinking through that process was difficult but a lot of fun.
 
-### Code Splitting
+Also incorporating Bulma and SASS in the project was difficult. Bulma is a newer css framework so the documentation is not as detailed, in addition to support and troubleshooting tips. There was a lot of trial and error but I ultimately enjoyed it. I choose Bulma because of the fact it was newer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I was initially going to try TailWind CSS but after testing it out, it was overwhelming with the amount features, and I did not like how much code was in my files. Bulma provides a similar experience, but paired down. I will say I like the simplicity of Bulma, however for this project, more customization would have been preferable.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Roadmap
 
-### Making a Progressive Web App
+- Additional styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Add more information about villagers
 
-### Advanced Configuration
+- Refactor code to simplify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Try axios
 
-### Deployment
+- Rework the day page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - [ACNH API](https://acnhapi.com/)
+ - [Bulma](https://bulma.io/)
+ - [Font Awesome](https://fontawesome.com/)
+ - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
+ - [Web Dev Smplified](https://www.youtube.com/c/TheNetNinja)
+

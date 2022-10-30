@@ -35,8 +35,8 @@ function Day ({ villagers }) {
 
 
     return ( 
-        <div>
-            <h2>{month} {day}</h2>
+        <div className="box">
+            <h2 className="title is-4 ml-6">{month} {day}</h2>
             {/* {console.log(findAnimals)} */}
             {/* {console.log(Object.values(findAnimals))} */}
 
@@ -47,7 +47,7 @@ function Day ({ villagers }) {
                         <Link key={animal.id} to={`/calendar/${month}/${day}/villager/${animal.id}`}>
                             <li >
                                 {/* {console.log(animal.id)} */}
-                                <span>{animal.name['name-USen']}</span>
+                                <span className="is-size-3 p-6 mr-4">{animal.name['name-USen']}</span>
                             </li>
                         </Link> )
                     )

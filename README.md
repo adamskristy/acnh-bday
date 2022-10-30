@@ -79,3 +79,7 @@ I was initially going to try TailWind CSS but after testing it out, it was overw
  - [The Net Ninja](https://www.youtube.com/c/TheNetNinja)
  - [Web Dev Smplified](https://www.youtube.com/c/TheNetNinja)
 
+ ## Disclaimer
+
+ Animal Crossing and all related assets are the sole property of Nintendo. I claim no ownership or rights. This information was use for non-commerical and educational purposes.
+

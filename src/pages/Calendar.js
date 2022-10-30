@@ -28,7 +28,7 @@ function Calendar({ months }) {
                     {selectedMonth?.days?.map((days, index) => {
                         return(
                             <Link key={index} to={`/calendar/${month}/${days}`}>
-                                    <div className="column is-12 is-size-3 p-6 mr-4 is-flex is-justify-content-center">{days}</div>
+                                    <div className="column is-12 is-size-3 p-6 mr-6 is-flex is-justify-content-center">{days}</div>
                             </Link>                      
                         )
                     })}

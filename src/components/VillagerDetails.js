@@ -21,11 +21,15 @@ function VillagerDetails ({ villagers }) {
     return ( 
         villager && (
         <div>
-            <h2>Name: {villager.name['name-USen']}</h2>
-            <h3>Birthday: {villager["birthday-string"]}</h3> 
-            <h3>Species: {villager.species}</h3>
-            <h3>Personality: {villager.personality}</h3>
-            <h3>Saying: {villager.saying} </h3>
+            <div className="card">
+                <h2 className="card-header-title">Name: {villager.name['name-USen']}</h2>
+                    <div className="card-content">
+                        <h3 className="">Birthday: {villager["birthday-string"]}</h3> 
+                        <h3>Species: {villager.species}</h3>
+                        <h3>Personality: {villager.personality}</h3>
+                        <h3>Saying: {villager.saying} </h3>
+                    </div>
+            </div>
           <Back />
         </div>
         )

@@ -52,9 +52,11 @@ function Form ({ villagers }) {
     } 
 
     return ( 
-        <div className='box control has-icons-left'>
-            <form onSubmit={handleSubmit}>
+        <div className='section'>
+            <form className='control has-icons-left' onSubmit={handleSubmit}>
                 <label className='label' name='search'>Search for your birthday match </label>
+                <p class="help">Please enter date without any extra zeros.</p>
+                <div className='field is-grouped'>
                 <input 
                 className='input'
                     name='search'
@@ -64,11 +66,12 @@ function Form ({ villagers }) {
                     value={formData} 
                     //updates state when user types
                     onChange={handleChange} 
-                />
+                /> 
                 <span className="icon is-small is-left">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
-                <input className='button' type='submit' value='submit' name='search' />
+                <input className='button is-primary' type='submit' value='submit' name='search' /> 
+                </div>
                 
             </form>
         </div>

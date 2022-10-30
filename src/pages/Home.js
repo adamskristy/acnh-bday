@@ -4,13 +4,13 @@ import Form from "../components/Form";
 
 function Home({ villagers }) {
     return ( 
-        <div className="tile is-ancestor columns is-flex-wrap-wrap">
+        <div className="columns is-flex-wrap-wrap">
                         
                 {months.map((month) => {
                     return(
-                        <div className="tile is-parent column is-one-fifth">
+                        <div className="column is-one-fifth">
                             <Link key={month.id} to={`/calendar/${month.month}`}>
-                                <h3 className="tile is-child box is-8 has-background-grey-lighter column ">{month.month}</h3>
+                                <h3 className="is-size-4 is-8 column py-6 px-2 is-flex is-justify-content-center">{month.month}</h3>
                             </Link>
                         </div>
                     )

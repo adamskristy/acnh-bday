@@ -6,7 +6,7 @@ function Header () {
     return ( 
         <div>
             <Link to='/' > 
-                <h1 className="section title is-1 is-family-primary">Animal Crossing: New Horizons Birthday Directory</h1>
+                <h1 className="section title is-3">Animal Crossing: New Horizons Birthday Directory</h1>
             </Link>
         </div>
      );

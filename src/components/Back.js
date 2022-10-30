@@ -5,8 +5,8 @@ function Back () {
 
 
     return ( 
-        <div>
-            <button className="button" onClick={() => navigate(-1)}>Back</button>
+        <div className="section">
+            <button className="button is-primary" onClick={() => navigate(-1)}>Back</button>
 
         </div>
      );

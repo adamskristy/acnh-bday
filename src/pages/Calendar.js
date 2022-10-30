@@ -20,20 +20,20 @@ function Calendar({ months }) {
     //console.log(selectedMonth)
 
     return ( 
-        <div>
-            <h3>{month} Calendar</h3>
-            <ul>
-                {/* using selected month object, map over days array */}
-                {selectedMonth?.days?.map((days, index) => {
-                    return(
-                        <Link key={index} to={`/calendar/${month}/${days}`}>
-                            <li>
-                                <span>{days}</span>
-                            </li>  
-                        </Link>                      
-                    )
-                })}
-            </ul>
+        <div className="">
+            <h3 className="title is-4 ml-6">{month} Calendar</h3>
+            <div className="columns is-variable is-1 is-flex-wrap-wrap">
+                
+                    {/* using selected month object, map over days array */}
+                    {selectedMonth?.days?.map((days, index) => {
+                        return(
+                            <Link key={index} to={`/calendar/${month}/${days}`}>
+                                    <div className="column is-12 is-size-3 p-6 mr-4 is-flex is-justify-content-center">{days}</div>
+                            </Link>                      
+                        )
+                    })}
+                
+            </div>
             <Back />   
         </div> 
      );

@@ -5,7 +5,7 @@ function Back () {
 
 
     return ( 
-        <div className="section">
+        <div className="is-flex is-justify-content-end">
             <button className="button is-primary" onClick={() => navigate(-1)}>Back</button>
 
         </div>

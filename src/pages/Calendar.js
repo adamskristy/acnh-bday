@@ -20,7 +20,7 @@ function Calendar({ months }) {
     //console.log(selectedMonth)
 
     return ( 
-        <div className="">
+        <div className="box">
             <h3 className="title is-4 ml-6">{month} Calendar</h3>
             <div className="columns is-variable is-1 is-flex-wrap-wrap">
                 

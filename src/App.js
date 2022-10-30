@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import VillagerDetails from "./components/VillagerDetails";
 import  months  from "./components/months";
 import NotFound404 from "./pages/NotFound404";
+import Footer from "./components/Footer";
 
 
 
@@ -42,6 +43,7 @@ function App() {
         <Route path='/calendar/:month/:day/villager/:id' element={<VillagerDetails villagers={villagers} />} />
         <Route path='/notfound' element={<NotFound404 />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -28,6 +28,7 @@ function Form ({ villagers }) {
                 return true
             } else {
                 navigate('/notfound')
+                return false
             }             
         })
         //console.log(findByBirthday)
@@ -53,24 +54,27 @@ function Form ({ villagers }) {
 
     return ( 
         <div className='section'>
-            <form className='control has-icons-left' onSubmit={handleSubmit}>
+            <form className='' onSubmit={handleSubmit}>
+
                 <label className='label' name='search'>Search for your birthday match </label>
-                <p class="help">Please enter date without any extra zeros.</p>
-                <div className='field is-grouped'>
-                <input 
-                className='input'
-                    name='search'
-                    type='text' 
-                    placeholder="Day/Month"
-                    //connect with state to keep track 
-                    value={formData} 
-                    //updates state when user types
-                    onChange={handleChange} 
-                /> 
+
+                <p class="help"> Please enter date without any extra zeros.</p>
+
+                <div className='field is-grouped control has-icons-left'>
+                    <input 
+                    className='input control'
+                        name='search'
+                        type='text' 
+                        placeholder="Day/Month"
+                        //connect with state to keep track 
+                        value={formData} 
+                        //updates state when user types
+                        onChange={handleChange} 
+                    /> 
                 <span className="icon is-small is-left">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cake-candles"></i>
                 </span>
-                <input className='button is-primary' type='submit' value='submit' name='search' /> 
+                    <input className='button is-primary' type='submit' value='Submit' name='search' /> 
                 </div>
                 
             </form>

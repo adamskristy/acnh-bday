@@ -7,7 +7,7 @@ function VillagerDetails ({ villagers }) {
     //console.log(id)
     
     const findAnimalById = villagers.find((v) => {
-        if(id == v.id){
+        if(id.toString() === v.id.toString()){
             return true
         } else {
             return false
@@ -20,14 +20,17 @@ function VillagerDetails ({ villagers }) {
     
     return ( 
         villager && (
-        <div>
-            <div className="card">
-                <h2 className="card-header-title">Name: {villager.name['name-USen']}</h2>
-                    <div className="card-content">
-                        <h3 className="">Birthday: {villager["birthday-string"]}</h3> 
-                        <h3>Species: {villager.species}</h3>
-                        <h3>Personality: {villager.personality}</h3>
-                        <h3>Saying: {villager.saying} </h3>
+        <div className="box">
+            <div className="is-flex is-justify-content-space-evenly pt-6 ">
+                <div className="image">
+                    <img src={villager['image_uri']} alt="villager"></img>
+                </div>
+                    <div className="">
+                        <h2 className="is-size-2">Name: {villager.name['name-USen']}</h2>
+                        <h3 className="is-size-2">Birthday: {villager["birthday-string"]}</h3> 
+                        <h3 className="is-size-2">Species: {villager.species}</h3>
+                        <h3 className="is-size-2">Personality: {villager.personality}</h3>
+                        <h3 className="is-size-2">Saying: "<span className="is-italic">{villager.saying}</span>" </h3>
                     </div>
             </div>
           <Back />

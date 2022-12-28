@@ -6,10 +6,10 @@ function Header() {
       <div className="hero-body">
         <Link to="/">
           <h1 className="title is-3">
-            Animal Crossing: New Horizons Birthday Database
+            Animal Crossing: New Horizons Villager Database
           </h1>
           <h2 className="subtitle">
-            Find out the Birthday of your favorite villager
+            Find your favorite villager by their birthday!
           </h2>
         </Link>
       </div>

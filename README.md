@@ -59,7 +59,7 @@ I was initially going to try TailWind CSS but after testing it out, it was overw
 
 ## Roadmap
 
-- Additional styling
+- Additional styling (try with bootstrap?)
 
 - Add more information about villagers
 
@@ -68,6 +68,9 @@ I was initially going to try TailWind CSS but after testing it out, it was overw
 - Try axios
 
 - Rework the day page
+
+- condense search forms into one with dropdown
+
 
 ## Acknowledgements
 

@@ -1,9 +1,5 @@
-function Image () {
-    return ( 
-        <div>
-            image
-        </div>
-     );
+function Image() {
+  return <div>image</div>;
 }
 
-export default Image ;
+export default Image;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Form({ villagers }) {
+function SearchBday({ villagers }) {
   const navigate = useNavigate();
 
   //set state for search by birthday form
@@ -10,13 +10,6 @@ function Form({ villagers }) {
   const handleChangeBday = (e) => {
     //prevent refresh of page on form submission
     setBdayData(e.target.value);
-  };
-
-  //set state for search by name form
-  const [nameData, setNameData] = useState("");
-
-  const handleChangeName = (e) => {
-    setNameData(e.target.value);
   };
 
   //search by birthday form
@@ -147,4 +140,4 @@ function Form({ villagers }) {
   );
 }
 
-export default Form;
+export default SearchBday;

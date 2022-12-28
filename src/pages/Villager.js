@@ -1,9 +1,5 @@
-function Villager () {
-    return ( 
-        <div>
-            Villager Page
-        </div>
-     );
+function Villager() {
+  return <div>Villager Page</div>;
 }
 
-export default Villager ;
+export default Villager;

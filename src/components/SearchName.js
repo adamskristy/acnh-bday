@@ -20,7 +20,7 @@ function SearchName({ villagers }) {
     const findByName = villagers.find((v) => {
 
       //need to fix search by uppercase
-      if (nameData == v.name["name-USen"].toLowerCase()) {
+      if (nameData === v.name["name-USen"].toLowerCase()) {
         return true;
       } else {
         navigate("/notfound");

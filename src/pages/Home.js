@@ -4,7 +4,7 @@ import Form from "../components/Form";
 
 function Home({ villagers }) {
   return (
-    <div className="box columns is-flex-wrap-wrap">
+    <div className="columns is-flex-wrap-wrap">
       {months.map((month) => {
         return (
           <div className="column is-one-fifth">

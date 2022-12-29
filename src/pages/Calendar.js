@@ -19,8 +19,8 @@ function Calendar({ months }) {
   //console.log(selectedMonth)
 
   return (
-    <div className="box">
-      <h3 className="title is-4 ml-6">{month} Calendar</h3>
+    <div className="">
+      <h3 className="title is-3 ml-6 mt-6">{month} Calendar</h3>
       <div className="columns is-variable is-1 is-flex-wrap-wrap">
         {/* using selected month object, map over days array */}
         {selectedMonth?.days?.map((days, index) => {

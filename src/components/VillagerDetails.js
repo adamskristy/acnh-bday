@@ -19,7 +19,7 @@ function VillagerDetails({ villagers }) {
 
   return (
     villager && (
-      <div className="box">
+      <div className="section">
         <div className="is-flex is-justify-content-space-evenly pt-6 ">
           <div className="image">
             <img src={villager["image_uri"]} alt="villager"></img>

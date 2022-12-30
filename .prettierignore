@@ -2,3 +2,7 @@
 build
 coverage
 *.html
+*.css
+*.scss
+*.json
+*.md

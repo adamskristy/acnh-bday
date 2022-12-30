@@ -18,7 +18,6 @@ function SearchName({ villagers }) {
 
     //if data matches whats in search return true
     const findByName = villagers.find((v) => {
-
       //need to fix search by uppercase
       if (nameData === v.name["name-USen"].toLowerCase()) {
         return true;
@@ -47,14 +46,13 @@ function SearchName({ villagers }) {
   };
 
   return (
-    <div >
+    <div>
       <form className="mt-2" onSubmit={handleSubmitByName}>
         <label className="label" name="search">
           Search by Name
         </label>
-        <p class="help"> Please enter the name in lowercase.</p>
+        <p className="help"> Please enter the name in lowercase.</p>
         <div className="field is-grouped control has-icons-left">
-          
           <input
             className="input control"
             name="search"

@@ -5,11 +5,13 @@
 
 @import "../fontawesome/scss/solid.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+
+// mystyles
+.header-font {
+    font-family: 'Zilla Slab', serif;
+}
+
 // bulma
 @import "../../node_modules/bulma/bulma.sass";
 
-
-.calendar {  
-    width: 500px;
-}
-  

@@ -4,7 +4,7 @@ function Back() {
   const navigate = useNavigate();
 
   return (
-    <div className="is-flex is-justify-content-end">
+    <div className="is-flex is-justify-content-end mt-6">
       <button className="button is-primary" onClick={() => navigate(-1)}>
         Back
       </button>

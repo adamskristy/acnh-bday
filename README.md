@@ -71,7 +71,6 @@ I was initially going to try TailWind CSS but after testing it out, it was overw
 
 - condense search forms into one with dropdown
 
-
 ## Acknowledgements
 
 - [ACNH API](https://acnhapi.com/)

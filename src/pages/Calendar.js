@@ -27,11 +27,11 @@ function Calendar({ months }) {
         {selectedMonth?.days?.map((days, index) => {
           return (
             <div className="column is-2">
-            <Link key={index} to={`/calendar/${month}/${days}`}>
-              <h3 className="column is-flex is-justify-content-center has-background-info-light py-5 is-size-5">
-                {days}
-              </h3>
-            </Link>
+              <Link key={index} to={`/calendar/${month}/${days}`}>
+                <h3 className="column is-flex is-justify-content-center has-background-info-light py-5 is-size-5">
+                  {days}
+                </h3>
+              </Link>
             </div>
           );
         })}

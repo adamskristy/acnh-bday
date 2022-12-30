@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function SearchBday({ villagers }) {
   const navigate = useNavigate();
 
-  //set state 
+  //set state
   const [bdayData, setBdayData] = useState("");
 
   const handleChangeBday = (e) => {
@@ -12,7 +12,6 @@ function SearchBday({ villagers }) {
     setBdayData(e.target.value);
   };
 
-  
   const handleSubmitByDate = (e) => {
     //prevent refresh of page on form submission
     e.preventDefault();
@@ -30,7 +29,6 @@ function SearchBday({ villagers }) {
     let matchedAnimal = findByBirthday;
     //console.log(matchedAnimal)
 
-    
     const bdayString = matchedAnimal["birthday-string"];
     //console.log(bdayString);
     const newBdayString = bdayString.split(" ");
@@ -40,22 +38,19 @@ function SearchBday({ villagers }) {
     const newBirthday = birthday.split("/");
     const day = newBirthday[0];
 
-    navigate(`/calendar/${month}/${day}/villager/${matchedAnimal.id}`);
+    navigate(`/calendar/${month}/${day}`);
 
     //clear form after submission
     setBdayData("");
   };
 
-
   return (
-
-   
-    <div >
+    <div>
       <form className="block" onSubmit={handleSubmitByDate}>
         <label className="label" name="search">
           Search by Birthday
         </label>
-        <p class="help"> Please enter date without any extra zeros.</p>
+        <p className="help"> Please enter date without any extra zeros.</p>
         <div className="field is-grouped control has-icons-left">
           <input
             className="input control"
@@ -68,7 +63,7 @@ function SearchBday({ villagers }) {
             onChange={handleChangeBday}
           />
           <span className="icon is-small is-left">
-            <i class="fa-solid fa-cake-candles"></i>
+            <i className="fa-solid fa-cake-candles"></i>
           </span>
           <input
             className="button is-primary"

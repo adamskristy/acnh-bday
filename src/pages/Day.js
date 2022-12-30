@@ -5,7 +5,7 @@ function Day({ villagers }) {
   const { month, day } = useParams();
   //console.log(villagers)
 
-  const findAnimals = villagers.find((v) => {
+  const filteredAnimals = villagers.filter((v) => {
     const bdayString = v["birthday-string"];
     //console.log(bdayString)
     //birthday-string "January 1st"
@@ -17,47 +17,42 @@ function Day({ villagers }) {
     //console.log(newBirthday)
     //birthday ["1", "1"]
 
-    if (bdayString.includes(month) && newBirthday[0] === day) {
-      return true;
-    } else {
-      return false;
-    }
+    return bdayString.includes(month) && newBirthday[0] === day;
   });
 
-  let animalsArr = [];
-  // console.log(animalsArr)
-  //console.log(findAnimals)
-  animalsArr.push(findAnimals);
-  //console.log(animalsArr)
+  //console.log(filteredAnimals)
 
   return (
-    <div className="container">
+    <div className="container ">
       <h2 className="title is-3 mt-6">
         {month} {day}
       </h2>
-      {console.log(findAnimals)}
-      {/* {console.log(Object.values(findAnimals))} */}
-
-      <ul className="">
-        {animalsArr?.map((animal) => {
+      <div className="columns">
+        {filteredAnimals?.map((animal) => {
           return (
-            animal && (
-              <Link
-                key={animal.id}
-                to={`/calendar/${month}/${day}/villager/${animal.id}`}
-              >
-                <li>
+            <div>
+              {animal ? (
+              <div className="column is-one-fifth">
+                <Link
+                  key={animal.id}
+                  to={`/calendar/${month}/${day}/villager/${animal.id}`}
+                >
                   {/* {console.log(animal.id)} */}
-                  <span className="is-size-4">
-                    
-                    {animal.name["name-USen"]}
-                  </span>
-                </li>
-              </Link>
-            )
+                  <div className="image is-128x128 ">
+                    <img src={animal["icon_uri"]} alt="villager"></img>
+                  </div>
+                  <span className="is-size-4">{animal.name["name-USen"]}</span>
+                </Link>
+              </div>
+              ) : (
+                <div><h1>Sorry, there are no villagers with that birthdate.</h1></div>
+              
+              )}
+            </div>
           );
         })}
-      </ul>
+      </div>
+
       <Back />
     </div>
   );

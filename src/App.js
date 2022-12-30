@@ -10,7 +10,6 @@ import months from "./components/months";
 import NotFound404 from "./pages/NotFound404";
 import Footer from "./components/Footer";
 
-
 function App() {
   let [villagers, setVillagers] = useState([]);
 
@@ -28,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className="">
+    <div>
       <Header />
       <Routes>
         <Route path="/" element={<Home villagers={villagers} />} />

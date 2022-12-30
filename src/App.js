@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="">
       <Header />
       <Routes>
         <Route path="/" element={<Home villagers={villagers} />} />

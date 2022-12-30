@@ -31,14 +31,14 @@ function Day({ villagers }) {
   //console.log(animalsArr)
 
   return (
-    <div className="">
-      <h2 className="title is-3 ml-6 mt-6">
+    <div className="container">
+      <h2 className="title is-3 mt-6">
         {month} {day}
       </h2>
-      {/* {console.log(findAnimals)} */}
+      {console.log(findAnimals)}
       {/* {console.log(Object.values(findAnimals))} */}
 
-      <ul className="section">
+      <ul className="">
         {animalsArr?.map((animal) => {
           return (
             animal && (
@@ -48,7 +48,7 @@ function Day({ villagers }) {
               >
                 <li>
                   {/* {console.log(animal.id)} */}
-                  <span className="is-size-3 p-6 mr-4">
+                  <span className="is-size-4">
                     
                     {animal.name["name-USen"]}
                   </span>

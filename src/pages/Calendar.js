@@ -19,22 +19,25 @@ function Calendar({ months }) {
   //console.log(selectedMonth)
 
   return (
-    <div className="">
-      <h3 className="title is-3 ml-6 mt-6">{month} Calendar</h3>
-      <div className="columns is-variable is-1 is-flex-wrap-wrap">
+    <section className="container">
+      <h3 className="title is-3 mt-6">{month} Calendar</h3>
+
+      <div className="columns is-multiline">
         {/* using selected month object, map over days array */}
         {selectedMonth?.days?.map((days, index) => {
           return (
+            <div className="column is-2">
             <Link key={index} to={`/calendar/${month}/${days}`}>
-              <div className="column is-12 is-size-3 p-6 mr-6 is-flex is-justify-content-center">
+              <h3 className="column is-flex is-justify-content-center has-background-info-light py-5 is-size-5">
                 {days}
-              </div>
+              </h3>
             </Link>
+            </div>
           );
         })}
       </div>
       <Back />
-    </div>
+    </section>
   );
 }
 

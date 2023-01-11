@@ -1,6 +1,6 @@
 # ACNH Birthday Directory
 
-This mid-mod is frontend focused and for practicing React skills.
+This mid-mod project is frontend focused and for practicing React skills.
 
 ### Minimum Project Requirements
 
@@ -26,24 +26,60 @@ https://acnh-bday.netlify.app
 
 ## Motivations
 
-I choose this project idea due to love of video games, like Animal Crossing, and wanting to pick a fun topic. Also the ease of access to the information. I wanted to pick an API that was relatively simple to understand.
+I choose this project idea due to love of video games, like Animal Crossing, and wanting to pick a fun topic. Also the ease of access to the information. I picked an API that was relatively simple to understand.
 
-This project is for the Animal Crossing Lovers like myself.
+This target audience is for the Animal Crossing Lovers like myself.
 
+## Resources
+
+[ACNH API](https://acnhapi.com/) is a free RESTful API for critters, fossils, art, music, furniture and villagers from Animal Crossing: New Horizons. I accessed the villager data as an [object array](http://acnhapi.com/v1a/villagers) instead of a nested JSON to allow me to practice array methods and manipulate the data as needed. 
+
+The schema is listed as follows from the ACNH API site
+
+![App Screenshot](https://i.imgur.com/5hJysiul.png)
+
+### Sample data
+```JSON
+{
+  "id": 1,
+  "file-name": "ant00",
+  "name": {
+    "name-USen": "Cyrano",
+    "name-EUen": "Cyrano",
+    "name-EUde": "Theo",
+    "name-EUes": "Cirano",
+    "name-USes": "Cirano",
+    "name-EUfr": "Cyrano",
+    "name-USfr": "Cyrano",
+    "name-EUit": "Cirano",
+    "name-EUnl": "Cyrano",
+    "name-CNzh": "阳明",
+    "name-TWzh": "陽明",
+    "name-JPja": "さくらじま",
+    "name-KRko": "사지마",
+    "name-EUru": "Сирано"
+  },
+  "personality": "Cranky",
+  "birthday-string": "March 9th",
+  "birthday": "9/3",
+  "species": "Anteater",
+  "gender": "Male",
+  "catch-phrase": "ah-CHOO",
+  "icon_uri": "https://acnhapi.com/v1/icons/villagers/1",
+  "image_uri": "https://acnhapi.com/v1/images/villagers/1"
+}
+```
 ## Screenshots
 
-I used Miro to help whiteboard an idea for the layout.
+I used [Miro](https://miro.com/) to help streamline by ideas for layout and react components. My idea was create a very simple and easy to use calendar. I wanted to user to be able to access the specific information they wanted quickly without having to click through all the pages. 
+
+The app is target to Animal Crossing lovers who most likely would know the villager by name and be able to search for their favorites, however, I felt that even people who aren't familiar should be able to have fun and connect with the app so I included a search by birthday, a simple, yet fun way to engage people who may not be familiar.
 
 ![App Screenshot](https://i.imgur.com/ED5iqWhl.png)
 ![App Screenshot](https://i.imgur.com/jcbdDeNl.png)
 ![App Screenshot](https://i.imgur.com/fJnc8hDl.png)
 ![App Screenshot](https://i.imgur.com/zKsOITxl.png)
 
-## Tech Stack
-
-**Client:** React, Bulma, SCSS, SASS, Font Awesome
-
-**Server:** Node
 
 ## Lessons Learned
 
@@ -57,17 +93,30 @@ Also incorporating Bulma and SASS in the project was difficult. Bulma is a newer
 
 I was initially going to try TailWind CSS but after testing it out, it was overwhelming with the amount features, and I did not like how much code was in my files. Bulma provides a similar experience, but paired down. I will say I like the simplicity of Bulma, however for this project, more customization would have been preferable.
 
-## Roadmap
 
-- Additional styling (try with bootstrap?)
+
+## Future Updates
+
+- Additional styling 
+    - fixed grid layout on Home and Calendar page
+    - general restyling of pages
 
 - Add more information about villagers
+    - added villager icons
+    - added villager text and bubble colors
 
 - Refactor code to simplify
+    - seperated logic for search form into seperate components (name and birthday)
+    - fixed code to filter through api correctly and return results (switched from filter to find method)
 
-- Try axios
+- Try axios instead of fetch
 
-- Rework the day page
+- Rework the day page 
+    - I assumed there would be multiple villagers for each date and based my layout upon that. Need to adjust so page is not so empty
+    - adding icons helped but still too much white space
+
+- fix search by name form (unable to use uppercase)
+- placeholder text if no villager data
 
 - condense search forms into one with dropdown
 

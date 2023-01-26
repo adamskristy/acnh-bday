@@ -1,16 +1,20 @@
 @charset "utf-8";
 
-// font awesome
-@import "../fontawesome/scss/fontawesome.scss";
-
-@import "../fontawesome/scss/solid.scss";
-
+// Import a Google Font
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
 
-// mystyles
-.header-font {
-    font-family: 'Zilla Slab', serif;
-}
+// Set your brand colors
+
+$acblue: #81f1f7;
+$acbrown: #c48d3f;
+$acyellow: #fff563;
+$acgreen: #9dffb0;
+
+// Update Bulma's global variables
+$family-sans-serif: "Zilla Slab", serif;
+
+//$link: $pink;
+
 
 // bulma
 @import "../../node_modules/bulma/bulma.sass";

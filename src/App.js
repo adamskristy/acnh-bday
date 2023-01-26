@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import "bulma/css/bulma.min.css";
+import mystyles from "./sass/mystyles.scss";
+
 import Header from "./components/Header";
 import Calendar from "./pages/Calendar";
 import Day from "./pages/Day";
